@@ -1,6 +1,8 @@
 # About Me
 
-I make robots work. This page is a simple outline of my all my work.  For more detail please see my [resume](/assets/files/resume.pdf).
+I make robots work. <br>
+This page is a simple outline of my all my work - for more detail please see my **[resume](/assets/files/resume.pdf)**.
+
 
 
 # Education
@@ -8,31 +10,32 @@ I make robots work. This page is a simple outline of my all my work.  For more d
 - **M.S. Mechanical Engineering** | University of Texas at Austin (_2019_)
 
 # Work Experience
+### Full-Time
 
-### Research Engineering / Scientist Associate IV - (Sept. 2019 - Present)
-   **University of Texas at Austin - Nuclear & Applied Robotics Group**
+- **Research Engineering / Scientist Associate IV** @ UT Austin Nuclear & Applied Robotics Group (_Sept. 2019 - Present_)
 
-### Systems Engineer - (June 2014 - July 2016)
-   **Lockheed Martin Missiles & Fire Control**
+- **Systems Engineer** @  Lockheed Martin Missiles & Fire Control (_June 2014 - July 2016_)
 
 ### Internships
+- **Robotics Engineering Intern** @ Booz Allen Hamilton / US Army Ground Vehicle Systems Center (_June 2019 - Aug. 2019_)
 
-#### Robotics Engineering Intern - (June 2019 - Aug. 2019)
-   **Booz Allen Hamilton / US Army Ground Vehicle Systems Center**
+- **Imaging, Robotics, and Radiation Systems Intern** @ Savannah River National Laboratory R&D Engineering (_May 2018 - Aug. 2018_)
 
-#### Imaging, Robotics, and Radiation Systems Intern - (May 2018 - Aug. 2018)
-   **Savannah River National Laboratory R&D Engineering**
+- **New Product Development Engineering Intern** @ Teledyne Oil & Gas (_May 2013 - Aug. 2013_)
 
-#### New Product Development Engineering Intern - (May 2013 - Aug. 2013)
-   **Teledyne Oil & Gas**
-
-#### User Engagement Project Coordinator Intern - (May 2012 - Aug. 2012)
-   **Blackberry**
+- **User Engagement Project Coordinator Intern** @ Blackberry (_May 2012 - Aug. 2012_)
 
 # Projects
 
-Many of my projects are not open source, but we have performed many demos and generated some publications that can shed some light on what we do at NRG.
+Many of my projects are not open source, but I've linked a couple projects which has some information open for the public.
 
-## AugRE
+### **Augmented Robot Environment ([AugRE](https://utnuclearroboticspublic.github.io/Augmented-Robot-Environment/))**
 
-[AugRE](https://utnuclearroboticspublic.github.io/Augmented-Robot-Environment/)
+AugRE is an AR application built on Unreal Engine that allows users to easily interface and command robots.  AugRE provides the ability for a medium to large multi-agent team to collaborate to perform tasks such as searching an area.
+
+{% include youtube.html id="jkkXMz9nBrI" %}
+
+### **Army Futures Command UTDD Integrated Prototype Project**
+
+{% include youtube.html id="QU-jWwfyaAE" %}
+
