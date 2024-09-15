@@ -1,13 +1,12 @@
 # About Me
 
-I make robots work. <br>
 This page is a simple outline of my all my work - for more detail please see my **[resume](/assets/files/resume.pdf)**.
 
 
 
 # Education
-- **B.S. Mechanical Engineering** | University of Florida (_2014_)
-- **M.S. Mechanical Engineering** | University of Texas at Austin (_2019_)
+- **B.S. Mechanical Engineering** @ University of Florida (_2014_)
+- **M.S. Mechanical Engineering** @ University of Texas at Austin (_2019_)
 
 # Work Experience
 ### Full-Time
@@ -34,6 +33,7 @@ Many of my projects are not open source, but I've linked a couple projects which
 AugRE is an AR application built on Unreal Engine that allows users to easily interface and command robots.  AugRE provides the ability for a medium to large multi-agent team to collaborate to perform tasks such as searching an area.
 
 {% include youtube.html id="jkkXMz9nBrI" %}
+
 
 ### **Army Futures Command UTDD Integrated Prototype Project**
 
