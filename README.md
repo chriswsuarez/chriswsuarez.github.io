@@ -5,8 +5,8 @@ This page is a simple outline of all my work - for more detail please see my **[
 Not much is on my main **[github](https://github.com/chriswsuarez)** page because most of the code I have written is not open source but you can view an example from our **[object_detection](https://github.com/UTNuclearRobotics/object_detection/tree/main)** repo.  That repo takes in information from YOLO or a similar object detection package and fuses it with Lidar to localize static objects in an environment using a mobile robot.  Please note this code example is from a few years ago and does not reflect my current coding ability but it is a stable repo of which I was the primary contributor.
 
 # Education
-- **B.S. Mechanical Engineering** @ University of Florida (_2014_)
 - **M.S. Mechanical Engineering** @ University of Texas at Austin (_2019_)
+- **B.S. Mechanical Engineering** @ University of Florida (_2014_)
 
 # Work Experience
 ### Full-Time
