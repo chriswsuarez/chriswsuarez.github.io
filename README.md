@@ -41,8 +41,9 @@ This video shows snippets from our long-term autonomy study in which two autonom
 
 {% include youtube.html id="QU-jWwfyaAE" %}
 
+
 # Development notes
 
-Since I've been working in robotics I've kept a small amount of notes I've found useful to return to quickly rather than have to google them over and over.  They can be found in markdown files [here](/assets/pages/how_to/)
+Since I've been working in robotics I've kept a small amount of notes I've found useful to return to quickly rather than have to google them over and over.  They can be found in markdown files **[here](/assets/pages/how_to/)**
 
-I've also made a repo I like to use to set up my development environment mostly focused on ROS.  [env_setup](https://github.com/chriswsuarez/env_setup)
+I've also made a repo I like to use to set up my development environment mostly focused on ROS. **[env_setup](https://github.com/chriswsuarez/env_setup)**
