@@ -11,7 +11,9 @@ Not much is on my main **[github](https://github.com/chriswsuarez)** page becaus
 # Work Experience
 ### Full-Time
 
-- **Research Engineering / Scientist Associate IV** @ UT Austin Nuclear & Applied Robotics Group (_Sept. 2019 - Present_)
+- **Software Inegration Engineer** @ TORC Robotics (_Nov. 2024 - May. 2025_)
+
+- **Research Engineering / Scientist Associate IV** @ UT Austin Nuclear & Applied Robotics Group (_Sept. 2019 - Nov. 2024_)
 
 - **Systems Engineer** @  Lockheed Martin Missiles & Fire Control (_June 2014 - July 2016_)
 
