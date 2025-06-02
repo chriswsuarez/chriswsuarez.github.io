@@ -10,8 +10,7 @@ Not much is on my main **[github](https://github.com/chriswsuarez)** page becaus
 
 # Work Experience
 ### Full-Time
-
-- **Software Inegration Engineer** @ TORC Robotics (_Nov. 2024 - May. 2025_)
+- **Software Inegration Engineer** @ TORC Robotics (_Contract - Nov. 2024 - May. 2025_)
 
 - **Research Engineering / Scientist Associate IV** @ UT Austin Nuclear & Applied Robotics Group (_Sept. 2019 - Nov. 2024_)
 
