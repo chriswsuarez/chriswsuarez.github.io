@@ -1,6 +1,6 @@
 # About Me
 
-This page is a simple outline of all my work - for more detail please see my **[resume](/assets/files/resume.pdf)**.
+This page is a simple outline of some of my work - for more detail please see my **[resume](/assets/files/resume.pdf)**.
 
 Not much is on my main **[github](https://github.com/chriswsuarez)** page because most of the code I have written is not open source but you can view an example from our **[object_detection](https://github.com/UTNuclearRobotics/object_detection/tree/main)** repo.  That repo takes in information from YOLO or a similar object detection package and fuses it with Lidar to localize static objects in an environment using a mobile robot.  Please note this code example is from a few years ago and does not reflect my current coding ability but it is a stable repo of which I was the primary contributor.
 
@@ -10,6 +10,10 @@ Not much is on my main **[github](https://github.com/chriswsuarez)** page becaus
 
 # Work Experience
 ### Full-Time
+- **Operations Technology Lead** @ Apptronik (_Feb. 2026 - Present_)
+
+- **Senior Software Support Engineer** @ Apptronik (_July 2025 - Feb. 2026_)
+
 - **Software Inegration Engineer** @ TORC Robotics (_Contract - Nov. 2024 - May. 2025_)
 
 - **Research Engineering / Scientist Associate IV** @ UT Austin Nuclear & Applied Robotics Group (_Sept. 2019 - Nov. 2024_)
@@ -25,7 +29,7 @@ Not much is on my main **[github](https://github.com/chriswsuarez)** page becaus
 
 - **User Engagement Project Coordinator Intern** @ Blackberry (_May 2012 - Aug. 2012_)
 
-# Projects
+# UT Work Projects
 
 Many of my projects are not open source, but I've linked a couple projects which has some information open for the public.
 
@@ -42,6 +46,13 @@ This video shows snippets from our long-term autonomy study in which two autonom
 
 {% include youtube.html id="QU-jWwfyaAE" %}
 
+# Personal Project
+
+I am a huge baseball fan that is very much into the anlalytics and data side of the game.  I've been wanting to make a tool for myself for years to concisely show specific advanced metrics for every player and how they can be used to evaluate each player's toolset.
+
+[Baseball Simpleton](https://baseballsimpleton.com)
+
+I have downloaded as much raw data I can find for all MLB and Triple-A games going back to 2015 when MLB introduced statcast ball tracking data.  With this I can very easily spin up new statistics and incorporate them into the site for all players at once.  The design of the backend is simple enough where soon enough it will allow others to easily contribute or customize their own version with their own weights to evaluate each player based on their preferences!
 
 # Development notes
 
