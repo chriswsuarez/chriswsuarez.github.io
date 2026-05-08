@@ -46,11 +46,11 @@ This video shows snippets from our long-term autonomy study in which two autonom
 
 {% include youtube.html id="QU-jWwfyaAE" %}
 
-# Personal Project
+# Personal Project - Baseball!
 
 I am a huge baseball fan that is very much into the anlalytics and data side of the game.  I've been wanting to make a tool for myself for years to concisely show specific advanced metrics for every player and how they can be used to evaluate each player's toolset.
 
-[Baseball Simpleton](https://baseballsimpleton.com)
+**[Baseball Simpleton](https://baseballsimpleton.com)**
 
 I have downloaded as much raw data I can find for all MLB and Triple-A games going back to 2015 when MLB introduced statcast ball tracking data.  With this I can very easily spin up new statistics and incorporate them into the site for all players at once.  The design of the backend is simple enough where soon enough it will allow others to easily contribute or customize their own version with their own weights to evaluate each player based on their preferences!
 
