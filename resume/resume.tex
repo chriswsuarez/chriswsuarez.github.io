@@ -1,0 +1,203 @@
+% Resume -- Christopher Suarez
+%
+% Pushing a change to this file on main rebuilds assets/files/resume.pdf
+% (see .github/workflows/build-resume.yml).
+%
+% Local preview (output lands next to this file and is git-ignored):
+%   tectonic resume/resume.tex
+% Needs XeLaTeX or LuaLaTeX (Tectonic is XeLaTeX); on Overleaf, set the
+% compiler to XeLaTeX.
+
+\documentclass[letterpaper,12pt]{article}
+
+\usepackage{fontspec}
+% Carlito is an open-source font metrically compatible with Calibri, the font
+% the old Word version used, so text lines up the same way. Ligatures are off
+% to match Word and so resume-parsing software reads every word cleanly.
+\setmainfont{Carlito}[
+  Extension      = .ttf,
+  UprightFont    = *-Regular,
+  BoldFont       = *-Bold,
+  ItalicFont     = *-Italic,
+  BoldItalicFont = *-BoldItalic,
+  Ligatures      = {TeX, NoCommon},
+  Numbers        = Lining,
+]
+% Body text sits 0.1in inside the 0.5in page margins; section headings and the
+% header rule reach back out to the page margin (see \outdent).
+\usepackage[top=0.75in,bottom=0.75in,left=0.6in,right=0.6in]{geometry}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage[hidelinks,pdfauthor={Christopher Suarez},pdftitle={Christopher Suarez Resume}]{hyperref}
+
+\pagestyle{empty}
+% Word's single spacing for Calibri is 1.22x the font size; LaTeX's is 1.2x.
+\linespread{1.014}
+\setlength{\parindent}{0pt}
+\raggedright
+\frenchspacing
+\hyphenpenalty=10000
+
+\newlength{\outdent}
+\setlength{\outdent}{0.1in}
+
+\definecolor{linkblue}{HTML}{0563C1}
+
+% Underline at a fixed depth so letters with descenders don't push it lower.
+\newcommand{\ul}[1]{\underline{\smash{#1}}}
+% Hyperlink styled the way Word shows them: blue and underlined.
+\newcommand{\link}[2]{\href{#1}{\textcolor{linkblue}{\ul{#2}}}}
+
+% Bold, all-caps section title at the page margin.
+\newcommand{\resumesection}[1]{%
+  \par\vspace{4pt}%
+  \hspace*{-\outdent}\textbf{#1}\par\nopagebreak}
+% Organization or venue, with a right-aligned location or date.
+\newcommand{\heading}[2]{%
+  \par\vspace{2pt}%
+  #1\hfill #2\par\nopagebreak}
+% Italic job title, with right-aligned dates.
+\newcommand{\subheading}[2]{\textit{#1}\hfill #2\par\nopagebreak}
+% Italic degree, school, and right-aligned year.
+\newcommand{\degree}[3]{\textit{#1}, #2\hfill #3\par}
+% Bold project title within a job.
+\newcommand{\project}[1]{\textbf{#1}\par\nopagebreak}
+% Indented publication: linked label -- italic title.
+\newcommand{\publication}[3]{\hspace*{0.2in}\link{#1}{#2} -- \textit{#3}\par}
+
+\setlist[itemize]{label=o, nosep, leftmargin=0.4in, labelindent=0.2in,
+  labelwidth=0.2in, labelsep=0pt, align=left, beginpenalty=10000}
+
+\begin{document}
+
+{\centering
+  % The strut gives the name line Word's full ascent from the top margin.
+  {\fontsize{20pt}{24pt}\selectfont \rule{0pt}{19pt}Christopher Suarez\par}
+  \vspace{2pt}
+  chriswsuarez@gmail.com \textbar{} 954-336-9953 \textbar{}
+  \link{https://www.linkedin.com/in/chriswsuarez}{linkedin} \textbar{}
+  \link{https://chriswsuarez.github.io/}{github}\par}
+\vspace{-5pt}
+\hspace*{-\outdent}\rule{\dimexpr\textwidth+2\outdent}{0.5pt}\hspace*{-\outdent}\par
+\vspace{3pt}
+
+\resumesection{SUMMARY}
+Robotics engineer with 10 years experience focused on development \& deployment of autonomous systems
+
+\resumesection{EDUCATION}
+\degree{M.S. Mechanical Engineering}{University of Texas at Austin}{2019}
+\degree{B.S. Mechanical Engineering}{University of Florida}{2014}
+
+\resumesection{EMPLOYMENT}
+\heading{\ul{Moderna}}{Boston, MA}
+\subheading{Sr. Engineer II, Robotic Systems}{Nov. 2026 -- Present}
+
+\heading{\ul{Apptronik}}{Austin, TX}
+\subheading{Sr. Systems Integration Engineer}{May. 2026 -- Oct. 2026}
+\begin{itemize}
+  \item Redesigned, implemented, and deployed the reprovisioning process for Windows teleop machines
+  \item Automated critical fleet-wide deployment and diagnostic processes via Ansible \& crontab on server
+  \item Supported and improved internal fleet monitoring through Zabbix
+  \item Implemented harbor docker registry mirror to mitigate local network bandwidth issues across fleet
+\end{itemize}
+\subheading{Sr. Software Support Engineer}{July 2025 -- May. 2026}
+\begin{itemize}
+  \item Primary software engineer responding to software / firmware issues with deployed robots
+  \item Performed all OTA software upgrades to the fleet and PR/MR'd various OTA software improvements
+  \item Supported critical robot deployment and \link{https://youtu.be/UObzWjPb6XM?si=ZYu0lCAWmv4WC2iq&t=219}{demo} events domestically and internationally
+  \item Created diagnostic tools for Field Service and Operations teams for ECAT and firmware diagnosis
+\end{itemize}
+
+\heading{\ul{TORC Robotics (contractor through Actalent)}}{Austin, TX}
+\subheading{Software Integration Engineer}{Nov. 2024 -- May. 2025}
+\begin{itemize}
+  \item Streamlined Jenkins CI/CD pipeline using Bazel, reducing CI build times by 33 -- 50\%
+  \item Created CPU \& Memory resource usage tool to assess sensor driver performance at runtime and in CI
+  \item Updated IMU and Lidar sensor drivers to modern internal fault framework
+  \item Debugged hardware and sensor firmware issues for Hardware-in-the-loop (HIL) Lab
+  \item Expanded sensor validators to new sensor drivers ensuring performance to meet requirements
+\end{itemize}
+
+\heading{\ul{UT Austin Nuclear \& Applied Robotics Group}}{Austin, TX}
+\subheading{Research Engineering Scientist Associate IV}{Sept. 2019 -- Nov. 2024}
+\project{Summary}
+\begin{itemize}
+  \item Oversaw and performed over 100 technical demos directly leading to \textgreater\$10M in project funding to UT
+  \item Expertise in setting up, debugging, and operating robotics systems with ROS
+  \item Managed development teams for multiple research integration projects
+  \item Mentored new engineer and student hires across varying research efforts
+\end{itemize}
+\project{Army Futures Command UTDD Project SPEED}
+\begin{itemize}
+  \item Lead demo engineer overseeing a large-scale on-site technical demonstration with a team of 12
+  \item Stood up a new applied research lab focusing on large vehicle outdoor autonomy
+  \item Integrated Robot Technology Kernel (RTK) 22 onto a previously incompatible Hunter WOLF platform
+  \item Created a simulation test environment in Unreal Engine
+\end{itemize}
+\project{Augmented Robot Environment (\link{https://utnuclearroboticspublic.github.io/Augmented-Robot-Environment/}{AugRE}) Project}
+\begin{itemize}
+  \item Developed and dockerized software stack to co-localize robots with Hololens2 AR Headsets
+  \item Managed dev team creating software for AR in Unreal Engine and robotics in ROS/C++
+  \item Setup and managed LAN \& WAN network for multiple autonomous and human agent comms
+  \item Performed dozens of live hands-on demonstrations to VIPs, Gov Officials, Army Generals, CEOs
+\end{itemize}
+\project{Army Futures Command UTDD Integrated Prototype Project}
+\begin{itemize}
+  \item Contributed features, sensor integrations, and critical fixes to Army Research Labs' autonomy stack
+  \item Integrated ARL Phoenix navigation stack with custom research platform hardware
+  \item Conducted multi-week study to quantify long-term \link{https://www.youtube.com/watch?v=QU-jWwfyaAE}{autonomy} viability of various UT research efforts
+  \item Created custom robot and environment assets for Unity environment for simulation development
+  \item Developed object persistent localization \link{https://github.com/UTNuclearRobotics/object_detection/tree/main}{software} fusing camera, LIDAR, and mobile robot data
+\end{itemize}
+\project{AI2C ATR-MCAS Project}
+\begin{itemize}
+  \item Stood up an Army research platform for autonomous navigation using GPS, IMU, LIDAR, Segway base
+  \item Incorporated capability to visualize our autonomous software stack with ATAK (Android Tactical Awareness Kit) via Cursor-On-Target (CoT) XML messaging
+  \item Extended ATAK visualization capability to our AR AugRE system allowing human agents to appear on ATAK and interface with autonomous agents without co-localizing directly with AR anchors
+  \item Performed yearly deliverable hands-on live demonstrations on-site for Army VIPs
+\end{itemize}
+\project{SRNL H-Canyon Tunnel Inspection Project}
+\begin{itemize}
+  \item Developed 3D obstacle detection software for an off-road dual arm mobile manipulator via ROS / C++
+  \item Designed and constructed a 9'x12'x36' above ground tunnel as a mockup harsh test environment
+  \item Performed final semi-autonomous \link{https://www.youtube.com/watch?v=X-VfCXZ3_cE&t=3s}{demonstration} of tunnel inspection inside a mock environment
+\end{itemize}
+
+\heading{\ul{Lockheed Martin Missiles \& Fire Control}}{Orlando, FL}
+\subheading{Systems Engineer}{June 2014 -- July 2016}
+\begin{itemize}
+  \item Created system level engineering requirements and test procedures
+  \item Conducted program critical tests in-plant and on-site - domestically and internationally
+  \item Designed GUIs to operate and test complex machinery and contributed to the end product UI design
+\end{itemize}
+
+\resumesection{PERSONAL PROJECT}
+\heading{\link{https://baseballsimpleton.com/}{Baseball Simpleton}}{Apr. 2026}
+\begin{itemize}
+  \item Analyzed MLB data from statcast era into accessible UI (Typescript / React) for player analysis
+  \item Split data into year-by-year SQL databases and one meta SQL database to allow for fast queries
+  \item Implemented deployment through AWS EC2 system, DBs on S3 bucket, and crontab to update nightly
+\end{itemize}
+
+\resumesection{PUBLICATIONS \& PRESENTATIONS}
+\heading{\ul{IROS 2023 XR-ROB Workshop}}{Oct. 2023}
+\publication{https://arxiv.org/abs/2401.05665}{Abstract/Presentation}{AR UI for Command, Control, and Supervision of Large Multi-Agent Teams}
+\heading{\ul{IEEE International Conference on Robot \& Human Interactive Communication (RO-MAN) 2022}}{Sept. 2022}
+\publication{https://ieeexplore.ieee.org/document/9900721}{Paper}{AugRE: Augmented Robot Environment to Facilitate Human-Robot Teaming and Communication}
+\heading{\ul{Waste Management Symposia 2019}}{Mar. 2019}
+\publication{https://www.osti.gov/biblio/23005359}{Paper}{Savannah River Site H-Canyon Tunnel Inspection LiDAR Mapping Solution}
+\publication{https://www.osti.gov/biblio/1501414}{Paper}{Savannah River Site H-Canyon Advanced Technology Demonstration (ATD) Program Review}
+
+\resumesection{SKILLS}
+\begin{itemize}
+  \item Programming Languages: Python, C++, Typescript, Shell
+  \item AI Tools: Claude Code, OpenAI Codex, Gemini
+  \item Dev Tools: Git, Docker, Ansible, Zabbix, Bazel, Jenkins, AWS EC2 \& S3, Jira
+  \item Simulation: Unreal Engine, Gazebo, Unity
+  \item Software: ROS, Solidworks, Visual Studio, MatLAB, LabVIEW, QT, Linux, MacOS
+  \item IT: LAN / WAN networking, embedded machines, edge compute
+  \item Hardware: Additive manufacturing, lathes, mills, CNC\ldots
+  \item Systems: Requirements, validation \& testing, technical reporting, multi-disciplinary collaboration
+\end{itemize}
+
+\end{document}
