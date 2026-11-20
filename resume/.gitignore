@@ -1,0 +1,10 @@
+# Local LaTeX build output. The published PDF is assets/files/resume.pdf,
+# which CI rebuilds from resume.tex.
+*.pdf
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.xdv
+*.synctex.gz
